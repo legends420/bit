@@ -1,0 +1,21 @@
+Simply upload the files in this package to your server and follow these installation instructions, also make sure to check out the config.php file and make sure everything is adjusted to work properly.
+
+If you have cPanel you can easily set up Cron Jobs to automate a task. The time stuff is pretty self-explanatory, it dictates the period between each time the script will run. The command part is where you need to input the following:
+
+    php -q /home/serverpath/cron/tick_update.php
+
+All you need to do is change the first part "/home/serverpath/" to the location of your BitShop installation, then submit the Cron Job.
+
+The included market_stats.php file shows you how to extract the ticker data from your local copy and save it as an associative array. This file can easily be included into other scripts that need access to the ticker price data.
+
+Use the following code to include the market_stats.php file on any page. Make sure to change the file locations if they are wrong.
+
+    require_once('ticker/market_stats.php');
+
+You can access the price values like this:
+
+    $market_data['USD']['24h']
+	or
+    $market_data['AUD']['7d']
+	or
+    $market_data['GBP']['30d']

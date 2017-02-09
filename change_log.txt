@@ -1,0 +1,452 @@
+VERSION 1.1.2
+
+* fixed XSS exploit on category page
+* fixed bug preventing cron jobs from working
+* fixed bug when creating new code list items
+* fixed database error caused by file uploads
+* fixed support for servers without host name
+
+VERSION 1.1.1
+
+* added stand alone PHPMailer email library
+* fixed bug where SMTP enabled by default
+* fixed required files in clear_trans.php
+* fixed problem exporting more than 20 keys
+* fixed bug with debug default gateway setting
+
+VERSION 1.1.0
+
+* fixed issue with feed not working correctly
+* added support for using custom SMTP servers
+* simplified several configuration settings
+* added ability to sort products by sales
+* changed key export behaviour back to normal
+* a few small server compatibility tweaks
+
+VERSION 1.0.9
+
+* fixed database problem in sci/check-status.php
+* fixed incomplete british english language file
+* replaced hardcoded english text in buy.inc.php
+* email now sent when registering new account
+* auto-gen keys now list keys from unpaid orders
+
+VERSION 1.0.8
+
+Front End:
+
+* fixed feed bug caused by non-ascii characters
+* applied CSRF prevention to forms in account area
+
+Back End:
+
+* applied CSRF prevention to all post requests
+* applied CSRF prevention to sensitive get requests
+* fixed bug preventing key export from wallet
+* several other misc bug fixes and improvements
+
+VERSION 1.0.7
+
+Front End:
+
+* redesigned menu of the two included themes
+* user can now change language, currency, etc
+* added shopping cart and customer login area
+* added support for physical items and shipping
+* added support for coupouns and vouchers
+* now use bcmath to operate on decimal money values
+* recoded ticker stuff to be more reliable
+* overhauled the default payment gateway
+* support for multiple gateways simultaneously
+* several other misc bug fixes and improvements
+
+Back End:
+
+* added support for multiple admin accounts
+* real amount paid recorded for accurate accounting
+* support for custom list of bitcoin addresses
+* support for 0 confs in default payment gateway
+* support for almost any altcoin via the daemon RPC
+* recoded gateway system to be totally modular
+* added support for GoCoin payment gateway module
+* added support for a couple of new explorer api's
+* removed support for blockexplorer.com api
+* improved scalability of star rating system
+
+
+VERSION 1.0.6
+
+Front End:
+
+* removed use of numeric keys in session array
+
+Back End:
+
+* added ability to view backups and logs
+* fixed bug caused by editing instant downloads
+* fixed bug preventing file uploads via browser
+
+VERSION 1.0.5
+
+Front End:
+
+* fixed error caused by | characters in titles
+* improved behaviour of loading bar percentage
+* added support for standard German language
+* fixed bug allowing fractional order quantities
+
+Back End:
+
+* added setting to enable use of testnet
+* added setting to control decimal separator
+* added ability to change product method
+* recoded a lot of the SCI payment scripts
+* improved integration of coinbase API
+
+VERSION 1.0.4
+
+Front End:
+
+* fixed minor XSS bug on contact page
+
+Back End:
+
+* fixed email headers to reduce spam flags
+* ugly hack to fix coinbase session issue
+
+VERSION 1.0.3
+
+Front End:
+
+* fixed captcha bug affecting IE browsers
+* removed gen_validatorv4.js library
+
+Back End:
+
+* nothing
+
+VERSION 1.0.2
+
+Front End:
+
+* added Polish language
+* added Russian language
+* fixed character encoding issue
+* fixed price bug on related products
+* fixed display of sql error info
+
+Back End:
+
+* added ability to edit reviews
+* added ability to disable captcha
+* better handling of item deletion
+* updated to tinymce v4.1.7
+* updated to phpseclib v0.3.9
+
+VERSION 1.0.1
+
+Front End:
+
+* enhanced page title controller code
+* added html5shiv using conditional statement
+* fixed some mistakes in french translation
+* fixed coinbase link on RSS feed
+
+Back End:
+
+* fixed bug when updating SCI settings
+* fixed page title in admin area
+
+VERSION 1.0.0
+
+Front End:
+
+* made product boxes slightly wider
+* added support for coinbase checkout api
+* add a new theme as alternative to default
+* added support for mBTC and other price formats
+* added multi-language support (front end only)
+* added normalize and boilerplate css files
+* updated to html5boilerplate v4.3.0
+* updated to bootstrap v2.3.2
+* updated to jquery v1.11.1
+* updated to modernizr v2.8.2
+
+Back End:
+
+* added automated install script
+* updated the database code to use mysqli
+* removed ability to change size of RSA keys
+* cron script for cleaning unconfirmed trans
+* added Themes menu item in admin area
+* backup of private keys as safety measure
+* control email text from admin area
+* create items with static BTC price (not USD)
+* simplified settings controls in admin area
+* misc improvements to admin area
+
+VERSION 0.9.9
+
+Front End:
+
+* fixed potential security hole in payment gateway
+* fixed problems caused by simultaneous transactions
+* fixed problem with feed not updating properly
+
+Back End:
+
+* nothing
+
+VERSION 0.9.8
+
+Front End:
+
+* more relevant search results are shown first
+* added ability to set number of products per page
+* added ability to remove incomplete order notice
+* added product name to confirmation email
+
+Back End:
+
+* sends an email with code after manual confirmation
+* manually confirmed transactions are added to feed
+* "delete unconfirmed transactions" option refills stock
+
+VERSION 0.9.7
+
+Front End:
+
+* added support for Tor users (javascript still required)
+* users can now recover incomplete transactions
+
+Back End:
+
+* added ability to change price type (avg, close, etc)
+
+VERSION 0.9.6
+
+Front End:
+
+* added ability to change thousands separator on price
+
+Back End:
+
+* fixed javascript error on admin login page
+* fixed session reset problem caused by logout
+
+VERSION 0.9.5
+
+Front End:
+
+* patched critical SQL injection hole
+
+Back End:
+
+* made admin login safer with client side hashing
+* fixed admin session to IP for stronger login limit
+
+VERSION 0.9.4
+
+Front End:
+
+* better RNG for bitcoin key generation
+* increase download security (limit by IP)
+* merged updates from v0.5.1 of SCI script
+* fixed btc number formatting in feed list
+* fixed critical db error in ipn-control.php
+
+Back End:
+
+* updated to tinymce 4 editor
+* updated to goxgrab v0.1.4 (new API)
+* updated to phpseclib v0.3.5
+* custom download link expire time
+* added toggable featured products block
+
+VERSION 0.9.3
+
+Front End:
+
+* added support for subcategories
+* added support for category icons
+
+Back End:
+
+* fixed problem with block editing page
+* added ability to upload files via browser
+* updated tables to use bootstrap css
+* added 'seo settings' to settings page
+* created new 'categories' menu option
+* updated GUI of RSA Keygen page
+
+VERSION 0.9.2
+
+Front End:
+
+* fixed redirection errors in ipn-control.php
+* fixed scv mime type and added new mime types
+
+Back End:
+
+* fixed problem admin orders page pagination
+* added $keywords variable to config file
+
+VERSION 0.9.1
+
+Front End:
+
+* fixed random error confirming transactions
+
+Back End:
+
+* fixed problem with admin confirmation email
+
+VERSION 0.9.0
+
+Front End:
+
+* fixed strange pagination behaviour
+* fixed product image ratio issue
+* fixed invalid HTML on item page
+* fixed price on related products
+* status page will show codes/link during session
+* stars now reflect rounded product rating
+
+Back End:
+
+* updated main settings (inc/config.inc.php)
+* added ability to delete product images
+* created a modular template system
+* added section for managing keys
+* made editing categories easier
+* fixed price error on search items page
+* set max login attempts on login page
+
+VERSION 0.8.9
+
+Front End:
+
+* fixed problem with inc/pages/search.inc.php
+* fixed price formatting on all pages and blocks
+* added ability to sort items by price, name, date
+
+Back End:
+
+* added ability to disable website in settings
+
+VERSION 0.8.8
+
+Front End:
+
+* fixed problem with inc/blocks/newfiles.inc.php
+* fixed problem with get_time_difference() function
+
+Back End:
+
+* nothing
+
+VERSION 0.8.7
+
+Front End:
+
+* nothing
+
+Back End:
+
+* adds support for easily using other currencies
+* added display of fiat prices in some places
+
+VERSION 0.8.6
+
+Front End:
+
+* fixed shorthand PHP tag in item.inc.php file
+
+Back End:
+
+* fixed standards warning on admin home by fixing bit-sci lib
+* added ability to delete unconfirmed or all transactions
+* product, review and transaction pages display empty sets properly
+
+VERSION 0.8.5
+
+Front End:
+
+* nothing
+
+Back End:
+
+* fixed stock issue with File Key type when editing keys
+
+VERSION 0.8.4
+
+Front End:
+
+* fixed stock issue when items are purchased at the same time
+* increased max length of product title in top/best side bar
+
+Back End:
+
+* fixed stock issue when adding multiple codes to existing product
+* increased max character size of product description input
+
+VERSION 0.8.3
+
+Front End:
+
+* fixed problem with displaying non-jpeg images on some pages
+* fixed potential security issue with payment gateway
+* fixed potential unseen bugs with the payment gateway
+
+Back End:
+
+* nothing
+
+VERSION 0.8.2
+
+Front End:
+
+* nothing
+
+Back End:
+
+* 'Code List' method will handle input of 0 codes properly
+* fixed bug on admin home page with top and best products
+
+VERSION 0.8.1
+
+Front End:
+
+* fixed issue with displaying purchased codes/keys
+
+Back End:
+
+* nothing
+
+VERSION 0.8.0
+
+Front End:
+
+* complete template overhaul (bootstrap)
+* added product search section
+* added product ratings section
+* added product reviews section
+* added related products section
+* added popular and top rated list (can be disabled)
+* added newest list one home page (can be disabled)
+* added real time rss sales feed (can be disabled)
+* added captcha to start transaction
+* fixed many bugs and subtle problems
+
+Back End:
+
+* integrated admin area with bootstrap
+* added persistent navigation menu at side
+* added sales and products summary to home
+* added ability to search all products
+* added a 'Reviews' section for managing reviews
+* added ability to see product rating and sales
+* added new 'File Key' product type
+* added graphical HTML page editing
+* added ability to edit blocks (head, foot, etc)
+* fixed many bugs and subtle problems

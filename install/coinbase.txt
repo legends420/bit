@@ -1,0 +1,12 @@
+Coinbase setup:
+
+Go to Merchant Settings in Coinbase and change your callback URL to:
+
+SITE/sci/gateways/coinbase/callback.php?s=SECRET
+
+SITE is the base URL of your website and SECRET can be any random string you choose.
+Modify other merchant settings as needed. Leave the success and cancel URLs blank.
+Next go to the Merchant Profile tab and fill out your details.
+Then hover over your email address in the top right, and click User Settings.
+In the API tab, click New API Key, enable the merchant and orders permissions, and click Create.
+Enable the API key and copy it, the API secret, and callback secret into your BitShop gateway settings.
